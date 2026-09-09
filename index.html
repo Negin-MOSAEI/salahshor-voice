@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALAHSHOUR VOICE — Executive Communication & Accent Coach</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Executive accent & communication coaching by Abbas Salahshour. Standard American accent training, executive presence, and IELTS/TOEFL coaching for global leaders, lawyers, and ambitious professionals.">
+  <meta name="keywords" content="Executive Accent Coach, American Accent Training, Executive Communication, Accent Reduction, Abbas Salahshour, SALAHSHOUR VOICE, Legal English, IELTS Coach, TOEFL Speaking, Vocal Authority">
+  <meta name="author" content="Abbas Salahshour">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SALAHSHOUR VOICE — Executive Communication Coaching">
+  <meta property="og:description" content="Speak English with authority. Be heard. Be respected. Executive communication & American accent coaching for high-achieving professionals.">
+  <meta property="og:image" content="./hero.jpg">
+  <meta property="og:url" content="https://salahshourvoice.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./logo.png">
+
+  <!-- Google Fonts: Playfair Display (Editorial Serif) & Plus Jakarta Sans (Crisp Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alabaster: {
+              DEFAULT: '#F8F9FA',
+              50: '#FFFFFF',
+              100: '#F9FAFB',
+              200: '#F3F4F6',
+              300: '#E5E7EB',
+            },
+            gold: {
+              100: '#FDF7EB',
+              200: '#F7E7C4',
+              400: '#E5C07B',
+              500: '#C59B27', // Rich Metallic Gold
+              600: '#B0881E',
+              700: '#8E6B12',
+            },
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'editorial': '0 10px 30px -5px rgba(0, 0, 0, 0.05)',
+            'editorial-hover': '0 20px 40px -10px rgba(0, 0, 0, 0.10)',
+            'gold-glow': '0 4px 20px -2px rgba(197, 155, 39, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Performance CDNs: GSAP 3.12.5, ScrollTrigger, and Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <style>
+    /* Clean Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F9FAFB;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C59B27;
+    }
+
+    /* Lenis Smooth Scroll Essential Styles */
+    html.lenis, html.lenis body {
+      height: auto;
+    }
+    .lenis.lenis-smooth {
+      scroll-behavior: auto !important;
+    }
+    .lenis.lenis-smooth [data-lenis-prevent] {
+      overscroll-behavior: contain;
+    }
+    .lenis.lenis-stopped {
+      overflow: hidden;
+    }
+
+    /* Hardware-Accelerated Smooth CSS Transitions */
+    .btn-gold {
+      background: linear-gradient(135deg, #C59B27 0%, #B0881E 100%);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn-gold:hover {
+      transform: translateY(-1.5px);
+      box-shadow: 0 6px 20px -2px rgba(197, 155, 39, 0.45);
+    }
+    .btn-gold:active {
+      transform: translateY(0);
+    }
+
+    /* Lightweight Harmonic Equalizer Animation */
+    @keyframes barAcoustic {
+      0%, 100% { transform: scaleY(0.25); }
+      50% { transform: scaleY(1); }
+    }
+    .wave-bar {
+      transform-origin: bottom;
+      animation: barAcoustic 1.2s ease-in-out infinite;
+    }
+    .wave-1 { animation-delay: 0.0s; }
+    .wave-2 { animation-delay: 0.2s; }
+    .wave-3 { animation-delay: 0.4s; }
+    .wave-4 { animation-delay: 0.1s; }
+    .wave-5 { animation-delay: 0.3s; }
+
+    /* Performance Optimized Subtle Grid (Lightweight CSS only) */
+    .subtle-bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-gold-400 selection:text-black min-h-screen overflow-x-hidden subtle-bg-grid">
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION HEADER                                                         -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo & Monogram -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="relative w-10 h-10 rounded-lg bg-gradient-to-tr from-gold-600 via-gold-500 to-gold-400 p-[1.5px] shadow-sm transition-transform duration-200 group-hover:scale-105">
+          <div class="w-full h-full bg-white rounded-[7px] flex items-center justify-center overflow-hidden">
+            <img src="./logo.png" alt="Salahshour Voice Emblem" class="w-7 h-7 object-contain">
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-lg lg:text-xl tracking-wider text-black group-hover:text-gold-600 transition-colors">SALAHSHOUR VOICE</span>
+          <span class="text-[9px] uppercase tracking-[0.25em] text-gold-700 font-bold leading-none">Executive Coaching</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold uppercase tracking-wider text-slate-800">
+        <a href="#" class="text-gold-700 border-b-2 border-gold-500 pb-0.5 transition-colors">HOME</a>
+        <a href="#about" class="hover:text-gold-700 transition-colors">ABOUT</a>
+        <a href="#services" class="hover:text-gold-700 transition-colors">SERVICES</a>
+        <a href="#services" class="hover:text-gold-700 transition-colors">FOR IELTS/TOEFL</a>
+        <a href="#testimonials" class="hover:text-gold-700 transition-colors">TESTIMONIALS</a>
+        <a href="#contact" class="hover:text-gold-700 transition-colors">CONTACT</a>
+      </nav>
+
+      <!-- Header Action Button -->
+      <div class="hidden sm:flex items-center space-x-4">
+        <a href="#contact" class="btn-gold inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm border border-gold-500/40">
+          <span>BOOK A CONSULTATION</span>
+          <span class="material-symbols-outlined text-[16px]">north_east</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-toggle" type="button" aria-label="Toggle navigation" class="lg:hidden text-black hover:text-gold-700 p-2 focus:outline-none">
+        <span class="material-symbols-outlined text-[28px]" id="menu-icon">menu</span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white/98 backdrop-blur-md border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
+      <a href="#" class="block text-sm font-bold uppercase tracking-wider text-gold-700 py-1 mobile-link">HOME</a>
+      <a href="#about" class="block text-sm font-bold uppercase tracking-wider text-slate-900 hover:text-gold-700 py-1 mobile-link">ABOUT</a>
+      <a href="#services" class="block text-sm font-bold uppercase tracking-wider text-slate-900 hover:text-gold-700 py-1 mobile-link">SERVICES</a>
+      <a href="#services" class="block text-sm font-bold uppercase tracking-wider text-slate-900 hover:text-gold-700 py-1 mobile-link">FOR IELTS/TOEFL</a>
+      <a href="#testimonials" class="block text-sm font-bold uppercase tracking-wider text-slate-900 hover:text-gold-700 py-1 mobile-link">TESTIMONIALS</a>
+      <a href="#contact" class="block text-sm font-bold uppercase tracking-wider text-slate-900 hover:text-gold-700 py-1 mobile-link">CONTACT</a>
+      <div class="pt-4 border-t border-slate-200">
+        <a href="#contact" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-white bg-black shadow-md mobile-link">
+          <span>BOOK A CONSULTATION</span>
+          <span class="material-symbols-outlined text-[18px]">north_east</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20">
+
+    <!-- ========================================================================= -->
+    <!-- 1. HERO SECTION (High-Contrast, Pure Sharp Text & Blazing Performance)     -->
+    <!-- ========================================================================= -->
+    <section class="relative min-h-[90vh] flex items-center py-16 lg:py-24 overflow-hidden">
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left Content Column -->
+          <div class="lg:col-span-7 flex flex-col items-start space-y-6 z-10">
+            
+            <!-- Eyebrow Ribbon Pill -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-gold-500/50 text-gold-700 text-xs font-bold tracking-widest uppercase shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-gold-600"></span>
+              <span>SPEAK ENGLISH WITH AUTHORITY. BE HEARD. BE RESPECTED.</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="gsap-hero-title font-serif text-4xl sm:text-5xl lg:text-[3.85rem] font-bold text-black tracking-tight leading-[1.12]">
+              Speak Better English.<br>
+              <span class="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-gold-600 via-gold-500 to-amber-600">
+                Communicate with Impact.
+              </span>
+            </h1>
+
+            <!-- Paragraph (High Contrast Slate-900) -->
+            <p class="gsap-hero-sub text-base sm:text-lg lg:text-xl text-slate-900 font-normal max-w-2xl leading-relaxed">
+              Executive accent &amp; communication coaching for professionals who want their English to open doors, build trust, and command the room.
+            </p>
+
+            <!-- Action CTAs -->
+            <div class="gsap-hero-cta flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2 w-full sm:w-auto">
+              <a href="#contact" class="btn-gold inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider text-white shadow-gold-glow group">
+                <span>BOOK A CONSULTATION</span>
+                <span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+              </a>
+
+              <a href="#services" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl text-sm font-bold tracking-wider text-black bg-white hover:bg-slate-50 border-2 border-slate-300 hover:border-gold-500 shadow-sm transition-all duration-200">
+                <span>EXPLORE SERVICES</span>
+                <span class="material-symbols-outlined text-[18px]">south</span>
+              </a>
+            </div>
+
+            <!-- Global Credential Badges -->
+            <div class="pt-4 flex flex-wrap items-center gap-6 text-xs border-t border-slate-300 w-full">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-gold-600 text-[18px]">verified</span>
+                <span class="font-bold text-slate-950">Fortune 500 &amp; Law Leaders</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-gold-600 text-[18px]">public</span>
+                <span class="font-bold text-slate-950">Clients Across 7 Countries</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-gold-600 text-[18px]">lock</span>
+                <span class="font-bold text-slate-950">100% Confidential Advisory</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Hero Portrait (Strict Image Rule: hero.jpg) -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            <div class="relative w-full max-w-md lg:max-w-none group">
+              
+              <!-- Subtle Gold Offset Frame Layer -->
+              <div class="absolute -top-3 -right-3 w-full h-full rounded-2xl border-2 border-gold-500/50 bg-gradient-to-br from-gold-100/60 to-transparent -z-10"></div>
+              
+              <!-- Hero Portrait Outer Container -->
+              <div class="relative rounded-2xl overflow-hidden bg-white border border-slate-300 shadow-editorial">
+                
+                <div class="aspect-square relative overflow-hidden">
+                  <img src="./hero.jpg" alt="Abbas Salahshour" class="w-full h-full object-cover object-top">
+                </div>
+
+                <!-- Subtle Bottom Scrim -->
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+
+                <!-- Live Voice Resonance Indicator Pill (Top Right) -->
+                <div class="absolute top-4 right-4 flex items-center gap-2.5 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold-500/50 shadow-sm">
+                  <div class="flex items-end gap-[3px] h-3.5">
+                    <span class="w-[2.5px] h-full bg-gold-600 rounded-full wave-bar wave-1"></span>
+                    <span class="w-[2.5px] h-full bg-gold-600 rounded-full wave-bar wave-2"></span>
+                    <span class="w-[2.5px] h-full bg-gold-500 rounded-full wave-bar wave-3"></span>
+                    <span class="w-[2.5px] h-full bg-gold-600 rounded-full wave-bar wave-4"></span>
+                    <span class="w-[2.5px] h-full bg-gold-500 rounded-full wave-bar wave-5"></span>
+                  </div>
+                  <span class="text-[10px] tracking-wider text-gold-700 uppercase font-bold">Resonance Active</span>
+                </div>
+
+                <!-- Embedded Founder Information (Bottom Left) -->
+                <div class="absolute bottom-4 inset-x-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-300 shadow-sm flex items-center justify-between">
+                  <div>
+                    <h3 class="font-serif font-bold text-lg text-black">Abbas Salahshour</h3>
+                    <p class="text-[10px] uppercase tracking-widest text-gold-700 font-bold">Executive Coach • Master Vocalist</p>
+                  </div>
+                  <div class="w-9 h-9 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 border border-gold-500/40">
+                    <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. STATISTICS BAR (Ultra-Bright, High Contrast)                           -->
+    <!-- ========================================================================= -->
+    <section class="w-full bg-slate-50 border-y border-slate-200 py-12 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center divide-y md:divide-y-0 md:divide-x divide-slate-300">
+          
+          <!-- Stat 1: 9+ Years of Experience -->
+          <div class="flex flex-col items-center text-center px-4 pt-4 md:pt-0">
+            <div class="flex items-baseline font-serif font-extrabold text-4xl lg:text-5xl text-black">
+              <span class="stat-counter" data-target="9">0</span>
+              <span class="text-gold-600">+</span>
+            </div>
+            <span class="w-8 h-1 bg-gold-500 my-2.5 rounded-full"></span>
+            <span class="text-xs uppercase tracking-widest text-slate-950 font-bold">Years of Experience</span>
+          </div>
+
+          <!-- Stat 2: 7 Countries -->
+          <div class="flex flex-col items-center text-center px-4 pt-4 md:pt-0">
+            <div class="flex items-baseline font-serif font-extrabold text-4xl lg:text-5xl text-gold-600">
+              <span class="stat-counter" data-target="7">0</span>
+            </div>
+            <span class="w-8 h-1 bg-gold-500 my-2.5 rounded-full"></span>
+            <span class="text-xs uppercase tracking-widest text-slate-950 font-bold">Countries Represented</span>
+          </div>
+
+          <!-- Stat 3: 500+ Clients Coached -->
+          <div class="flex flex-col items-center text-center px-4 pt-4 md:pt-0">
+            <div class="flex items-baseline font-serif font-extrabold text-4xl lg:text-5xl text-black">
+              <span class="stat-counter" data-target="500">0</span>
+              <span class="text-gold-600">+</span>
+            </div>
+            <span class="w-8 h-1 bg-gold-500 my-2.5 rounded-full"></span>
+            <span class="text-xs uppercase tracking-widest text-slate-950 font-bold">Clients Coached</span>
+          </div>
+
+          <!-- Stat 4: Global Reach & Impact -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-left px-4 pt-4 md:pt-0 col-span-2 md:col-span-1">
+            <div class="inline-flex items-center gap-1.5 text-gold-700 mb-1">
+              <span class="material-symbols-outlined text-[18px]">public</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest">Global Reach</span>
+            </div>
+            <p class="text-sm text-slate-950 font-bold leading-snug">
+              Executives, Lawyers, Academics &amp; Ambitious Professionals Worldwide
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. SERVICES (HOW I CAN HELP YOU)                                          -->
+    <!-- ========================================================================= -->
+    <section id="services" class="py-24 lg:py-32 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 gsap-reveal-header">
+          <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-2 text-gold-700 text-xs font-bold uppercase tracking-widest mb-3">
+              <span class="w-2.5 h-2.5 rounded-full bg-gold-600"></span>
+              <span>HOW I CAN HELP YOU</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight">
+              Premium Coaching. Real Results.
+            </h2>
+          </div>
+          <p class="text-slate-900 text-base max-w-md font-normal leading-relaxed">
+            Structured diagnostic programs precision-engineered for non-native English speakers requiring supreme clarity, vocal resonance, and boardroom prestige.
+          </p>
+        </div>
+
+        <!-- 4 Strategic Service Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1: Standard American Accent Training -->
+          <div class="service-card group relative bg-white rounded-2xl p-8 border border-slate-300 hover:border-gold-500 shadow-editorial hover:shadow-editorial-hover transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-gold-700 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-200 mb-6 shadow-sm">
+                <span class="material-symbols-outlined text-[28px]">record_voice_over</span>
+              </div>
+              <div class="text-[10px] uppercase font-bold tracking-widest text-gold-700 mb-2">Track 01 • Phonetics</div>
+              <h3 class="font-serif text-xl font-bold text-black group-hover:text-gold-700 transition-colors mb-3 leading-snug">
+                Standard American Accent Training
+              </h3>
+              <p class="text-sm text-slate-900 font-normal leading-relaxed">
+                Reduce pronunciation interference, speak clearly, and sound natural in Standard American English.
+              </p>
+            </div>
+            <a href="#contact" class="mt-8 inline-flex items-center gap-2 text-gold-700 font-bold text-xs tracking-wider uppercase group-hover:text-black transition-colors">
+              <span>Explore Curriculum</span>
+              <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:translate-x-1.5">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Card 2: Executive Communication Coaching -->
+          <div class="service-card group relative bg-white rounded-2xl p-8 border border-slate-300 hover:border-gold-500 shadow-editorial hover:shadow-editorial-hover transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-gold-700 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-200 mb-6 shadow-sm">
+                <span class="material-symbols-outlined text-[28px]">gavel</span>
+              </div>
+              <div class="text-[10px] uppercase font-bold tracking-widest text-gold-700 mb-2">Track 02 • High-Stakes</div>
+              <h3 class="font-serif text-xl font-bold text-black group-hover:text-gold-700 transition-colors mb-3 leading-snug">
+                Executive Communication Coaching
+              </h3>
+              <p class="text-sm text-slate-900 font-normal leading-relaxed">
+                Communicate with influence, clarity, and confidence in meetings, presentations, negotiations, and interviews.
+              </p>
+            </div>
+            <a href="#contact" class="mt-8 inline-flex items-center gap-2 text-gold-700 font-bold text-xs tracking-wider uppercase group-hover:text-black transition-colors">
+              <span>Executive Protocol</span>
+              <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:translate-x-1.5">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Card 3: Speaking with Authority & Confidence -->
+          <div class="service-card group relative bg-white rounded-2xl p-8 border border-slate-300 hover:border-gold-500 shadow-editorial hover:shadow-editorial-hover transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-gold-700 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-200 mb-6 shadow-sm">
+                <span class="material-symbols-outlined text-[28px]">psychology</span>
+              </div>
+              <div class="text-[10px] uppercase font-bold tracking-widest text-gold-700 mb-2">Track 03 • Gravitas</div>
+              <h3 class="font-serif text-xl font-bold text-black group-hover:text-gold-700 transition-colors mb-3 leading-snug">
+                Speaking with Authority &amp; Confidence
+              </h3>
+              <p class="text-sm text-slate-900 font-normal leading-relaxed">
+                Overcome hesitation, improve delivery, and build a powerful presence that gets you respected and remembered.
+              </p>
+            </div>
+            <a href="#contact" class="mt-8 inline-flex items-center gap-2 text-gold-700 font-bold text-xs tracking-wider uppercase group-hover:text-black transition-colors">
+              <span>Presence Blueprint</span>
+              <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:translate-x-1.5">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Card 4: IELTS / TOEFL Coaching -->
+          <div class="service-card group relative bg-white rounded-2xl p-8 border border-slate-300 hover:border-gold-500 shadow-editorial hover:shadow-editorial-hover transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-gold-700 group-hover:bg-gold-600 group-hover:text-white transition-colors duration-200 mb-6 shadow-sm">
+                <span class="material-symbols-outlined text-[28px]">school</span>
+              </div>
+              <div class="text-[10px] uppercase font-bold tracking-widest text-gold-700 mb-2">Track 04 • Examination</div>
+              <h3 class="font-serif text-xl font-bold text-black group-hover:text-gold-700 transition-colors mb-3 leading-snug">
+                IELTS / TOEFL Coaching
+              </h3>
+              <p class="text-sm text-slate-900 font-normal leading-relaxed">
+                Targeted, exam-specific strategies to help you achieve your desired score faster and with confidence.
+              </p>
+            </div>
+            <a href="#contact" class="mt-8 inline-flex items-center gap-2 text-gold-700 font-bold text-xs tracking-wider uppercase group-hover:text-black transition-colors">
+              <span>Score Roadmap</span>
+              <span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-hover:translate-x-1.5">arrow_forward</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. ABOUT SECTION (Strict Image Rule: about.jpg)                            -->
+    <!-- ========================================================================= -->
+    <section id="about" class="py-24 lg:py-32 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left Visual: Executive Coaching Session Photo with Gold Offset Frame -->
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="relative group">
+              
+              <!-- Gold Offset Border Layer -->
+              <div class="absolute -top-3 -left-3 w-full h-full rounded-2xl border-2 border-gold-500/50 bg-gold-100/60 -z-10"></div>
+              
+              <!-- Main Image Card for about.jpg -->
+              <div class="relative rounded-2xl overflow-hidden bg-white border border-slate-300 shadow-editorial">
+                
+                <div class="aspect-square relative overflow-hidden">
+                  <img src="./about.jpg" alt="Executive Coaching Session" class="w-full h-full object-cover object-center">
+                </div>
+
+                <!-- Soft Scrim -->
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+
+                <!-- High-End Coaching Session Tag -->
+                <div class="absolute top-4 left-4 inline-flex items-center gap-2 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold-500/50 text-[10px] font-bold tracking-wider text-gold-700 uppercase shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-gold-600"></span>
+                  <span>1-on-1 Master Laboratory</span>
+                </div>
+
+                <!-- Live Audio Waveform Simulation Overlay -->
+                <div class="absolute bottom-4 inset-x-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-300 shadow-sm">
+                  <div class="flex items-center justify-between text-xs mb-2">
+                    <span class="text-gold-700 font-bold uppercase tracking-wider text-[10px]">Acoustic Formant Oscillation</span>
+                    <span class="text-black font-mono text-[11px] font-bold">Resonance 99.4%</span>
+                  </div>
+                  <div class="w-full h-8 flex items-end justify-between gap-[3px]">
+                    <span class="flex-1 h-full bg-gold-600 rounded-full wave-bar wave-1"></span>
+                    <span class="flex-1 h-full bg-gold-600 rounded-full wave-bar wave-2"></span>
+                    <span class="flex-1 h-full bg-gold-500 rounded-full wave-bar wave-3"></span>
+                    <span class="flex-1 h-full bg-gold-600 rounded-full wave-bar wave-4"></span>
+                    <span class="flex-1 h-full bg-gold-500 rounded-full wave-bar wave-5"></span>
+                    <span class="flex-1 h-full bg-gold-600 rounded-full wave-bar wave-2"></span>
+                    <span class="flex-1 h-full bg-gold-500 rounded-full wave-bar wave-4"></span>
+                    <span class="flex-1 h-full bg-gold-600 rounded-full wave-bar wave-1"></span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Content: Bio, Credentials & Methodology -->
+          <div class="lg:col-span-7 order-1 lg:order-2 flex flex-col items-start space-y-6">
+            
+            <div class="inline-flex items-center gap-2 text-gold-700 text-xs font-bold uppercase tracking-widest">
+              <span class="w-2.5 h-2.5 rounded-full bg-gold-600"></span>
+              <span>ABOUT SALAHSHOUR VOICE</span>
+            </div>
+
+            <!-- Exact Required Headline -->
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-[2.65rem] font-bold text-black tracking-tight leading-tight">
+              Helping High-Achieving Professionals Communicate at Their Highest Level
+            </h2>
+
+            <!-- Exact Bio & Credentials Text (Sharp Slate-950) -->
+            <div class="space-y-4 text-base sm:text-lg text-slate-900 font-normal leading-relaxed">
+              <p class="border-l-4 border-gold-500 pl-4 py-1.5 text-black font-semibold text-lg bg-gold-50/50 rounded-r-lg">
+                With over 9 years of experience coaching 500+ clients across 7 countries, I help executives, lawyers, academics, and ambitious professionals eliminate the accent and hesitation that quietly holds them back.
+              </p>
+              
+              <p class="text-slate-900 text-base leading-relaxed">
+                Holding an <strong class="text-black font-extrabold underline decoration-gold-500 decoration-2">MA in TEFL</strong>, having taught <strong class="text-black font-extrabold underline decoration-gold-500 decoration-2">Legal English and Communication at La Trobe Law School</strong>, and currently hosting the <strong class="text-black font-extrabold underline decoration-gold-500 decoration-2">LinguaFox Podcast</strong>, Abbas merges rigorous linguistic science with real-world boardroom dynamics. Every engagement is private, custom-tailored, and focused on rapid behavioral transformation.
+              </p>
+            </div>
+
+            <!-- Three Pillars Checklist -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-2 w-full">
+              <div class="flex items-center gap-2 text-black">
+                <span class="material-symbols-outlined text-gold-600 text-[22px]">done_all</span>
+                <span class="text-xs font-extrabold uppercase tracking-wider">Cognitive Phonetics</span>
+              </div>
+              <div class="flex items-center gap-2 text-black">
+                <span class="material-symbols-outlined text-gold-600 text-[22px]">done_all</span>
+                <span class="text-xs font-extrabold uppercase tracking-wider">Cadence Architecture</span>
+              </div>
+              <div class="flex items-center gap-2 text-black">
+                <span class="material-symbols-outlined text-gold-600 text-[22px]">done_all</span>
+                <span class="text-xs font-extrabold uppercase tracking-wider">Executive Gravitas</span>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="pt-2">
+              <a href="#contact" class="btn-gold inline-flex items-center gap-2 px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-wider text-white shadow-gold-glow border border-gold-500/40">
+                <span>MORE ABOUT ME</span>
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. TESTIMONIALS (High-Contrast Quotes & Authors)                          -->
+    <!-- ========================================================================= -->
+    <section id="testimonials" class="py-24 lg:py-32 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 text-gold-700 text-xs font-bold uppercase tracking-widest mb-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-gold-600"></span>
+            <span>EXECUTIVE ENDORSEMENTS</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight">
+            Voices of Authority Worldwide
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card relative bg-slate-50 rounded-2xl p-8 border border-slate-300 hover:border-gold-500 transition-all duration-300 shadow-editorial flex flex-col justify-between">
+            <div>
+              <div class="text-gold-600 font-serif text-4xl mb-3">“</div>
+              <p class="text-black text-base italic leading-relaxed mb-6 font-medium">
+                Abbas helped me transition from being constantly interrupted in boardrooms to setting the tone of the entire conversation. The precision of his feedback is unmatched.
+              </p>
+            </div>
+            <div class="border-t border-slate-300 pt-4">
+              <div class="text-sm font-extrabold text-black">Senior Partner</div>
+              <div class="text-xs text-gold-700 uppercase tracking-wider font-bold">International Arbitration Group (Geneva)</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card relative bg-slate-50 rounded-2xl p-8 border border-slate-300 hover:border-gold-500 transition-all duration-300 shadow-editorial flex flex-col justify-between">
+            <div>
+              <div class="text-gold-600 font-serif text-4xl mb-3">“</div>
+              <p class="text-black text-base italic leading-relaxed mb-6 font-medium">
+                The accent coaching was surgically precise. Within 8 weeks, investor questions shifted entirely from clarification to deal terms. It directly altered my funding trajectory.
+              </p>
+            </div>
+            <div class="border-t border-slate-300 pt-4">
+              <div class="text-sm font-extrabold text-black">Managing Director &amp; Founder</div>
+              <div class="text-xs text-gold-700 uppercase tracking-wider font-bold">Cross-Border Fintech (London &amp; NYC)</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card relative bg-slate-50 rounded-2xl p-8 border border-slate-300 hover:border-gold-500 transition-all duration-300 shadow-editorial flex flex-col justify-between">
+            <div>
+              <div class="text-gold-600 font-serif text-4xl mb-3">“</div>
+              <p class="text-black text-base italic leading-relaxed mb-6 font-medium">
+                His methodology goes far beyond pronunciation—it instills psychological vocal sovereignty. My keynote delivery at global symposiums commands absolute stillness.
+              </p>
+            </div>
+            <div class="border-t border-slate-300 pt-4">
+              <div class="text-sm font-extrabold text-black">Chair of Comparative Law</div>
+              <div class="text-xs text-gold-700 uppercase tracking-wider font-bold">European Legal Institute (Zurich)</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. CONTACT & CONSULTATION BOOKING (Formspree Endpoint)                     -->
+    <!-- ========================================================================= -->
+    <section id="contact" class="py-24 lg:py-32 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Sovereign Card Container -->
+        <div class="relative rounded-3xl bg-white border-2 border-gold-500/50 p-8 sm:p-12 lg:p-16 shadow-editorial-hover overflow-hidden">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Information Column -->
+            <div class="lg:col-span-6 flex flex-col space-y-6">
+              
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-100 border border-gold-500/50 text-gold-800 text-xs font-bold tracking-widest uppercase w-max">
+                <span class="material-symbols-outlined text-[16px]">lock</span>
+                <span>TAKE COMMAND OF YOUR VOICE</span>
+              </div>
+
+              <!-- Main CTA Heading -->
+              <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight leading-tight">
+                Ready to Transform Your Communication?
+              </h2>
+
+              <p class="text-base sm:text-lg text-slate-900 font-normal leading-relaxed">
+                Book a free discovery call and take the first step toward speaking English with confidence and authority.
+              </p>
+
+              <!-- Direct Email Highlight -->
+              <div class="flex items-center gap-3 pt-2">
+                <div class="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-gold-700 border border-slate-300">
+                  <span class="material-symbols-outlined text-[20px]">mail</span>
+                </div>
+                <div>
+                  <div class="text-[10px] uppercase font-bold tracking-wider text-slate-950">Direct Inquiries</div>
+                  <a href="mailto:salahshourabbas@gmail.com" class="text-base sm:text-lg font-bold text-gold-700 hover:text-black transition-colors underline decoration-gold-500/60 underline-offset-4">
+                    salahshourabbas@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Trust Markers -->
+              <div class="pt-4 flex flex-col gap-2 text-xs text-slate-950 font-bold">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-gold-600 text-[18px]">check_circle</span>
+                  <span>Confidential 30-min evaluation • No obligation</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-gold-600 text-[18px]">check_circle</span>
+                  <span>Private 1-on-1 Diagnostic &amp; Action Plan</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Interactive Form Column with Formspree Endpoint -->
+            <div class="lg:col-span-6 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-300 shadow-sm">
+              <form action="https://formspree.io/f/mrpgowdg" method="POST" class="space-y-4">
+                
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-black mb-2">Your Name</label>
+                  <input type="text" name="name" required placeholder="e.g., Jonathan Vance" class="w-full px-4 py-3 rounded-xl bg-white border-2 border-slate-300 text-black placeholder-slate-500 font-medium text-sm focus:outline-none focus:border-gold-600 shadow-sm transition-colors">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-black mb-2">Email Address</label>
+                  <input type="email" name="email" required placeholder="executive@firm.com" class="w-full px-4 py-3 rounded-xl bg-white border-2 border-slate-300 text-black placeholder-slate-500 font-medium text-sm focus:outline-none focus:border-gold-600 shadow-sm transition-colors">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-black mb-2">Message &amp; Coaching Goals</label>
+                  <textarea name="message" rows="4" required placeholder="Briefly describe your high-stakes communication goals or current challenges..." class="w-full px-4 py-3 rounded-xl bg-white border-2 border-slate-300 text-black placeholder-slate-500 font-medium text-sm focus:outline-none focus:border-gold-600 shadow-sm transition-colors"></textarea>
+                </div>
+
+                <button type="submit" class="btn-gold w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-wider text-white shadow-gold-glow mt-2">
+                  <span>BOOK YOUR FREE CALL</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </button>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER                                                                    -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-white border-t border-slate-300 py-12 text-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-200">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded bg-gold-100 flex items-center justify-center border border-gold-500/50">
+            <img src="./logo.png" alt="Emblem" class="w-5 h-5 object-contain">
+          </div>
+          <div>
+            <span class="font-serif font-bold text-black tracking-wider text-sm">SALAHSHOUR VOICE</span>
+            <span class="block text-[10px] text-gold-700 uppercase tracking-widest font-extrabold">Executive Communication</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <a href="#" class="hover:text-gold-700 transition-colors uppercase tracking-wider font-bold">Home</a>
+          <a href="#about" class="hover:text-gold-700 transition-colors uppercase tracking-wider font-bold">About</a>
+          <a href="#services" class="hover:text-gold-700 transition-colors uppercase tracking-wider font-bold">Services</a>
+          <a href="#testimonials" class="hover:text-gold-700 transition-colors uppercase tracking-wider font-bold">Testimonials</a>
+          <a href="#contact" class="hover:text-gold-700 transition-colors uppercase tracking-wider font-bold">Contact</a>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-slate-700 font-semibold text-[11px]">
+        <p>© 2025 SALAHSHOUR VOICE. All rights reserved. Confidential &amp; Sovereign Advisory.</p>
+        <p>Founded by Abbas Salahshour • MA in TEFL • La Trobe Law School Alumnus</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT: LENIS SMOOTH SCROLL & ULTRA-LIGHTWEIGHT GSAP REVEALS (60FPS)  -->
+  <!-- ========================================================================= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 1. Mobile Menu Toggle
+      const menuBtn = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // 2. Optimized Lenis Smooth Scroll (Blazing fast, 100% GPU friendly)
+      let lenis;
+      try {
+        lenis = new Lenis({
+          duration: 1.0,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          smoothWheel: true,
+          wheelMultiplier: 1.0,
+        });
+
+        lenis.on('scroll', ScrollTrigger.update);
+
+        gsap.ticker.add((time) => {
+          lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+      } catch (err) {
+        console.warn('Lenis fallback:', err);
+      }
+
+      // 3. Ultra-Lightweight Hardware-Accelerated GSAP Reveals (Transform + Opacity Only)
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Hero Entrance (GPU only, zero layout thrashing)
+      gsap.fromTo('.gsap-hero-title',
+        { y: 24, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.75, ease: 'power2.out', delay: 0.1, clearProps: 'all' }
+      );
+
+      gsap.fromTo('.gsap-hero-sub',
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.7, ease: 'power2.out', delay: 0.25, clearProps: 'all' }
+      );
+
+      gsap.fromTo('.gsap-hero-cta',
+        { y: 16, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.65, ease: 'power2.out', delay: 0.35, clearProps: 'all' }
+      );
+
+      // Service Cards Simple Fade Up (once: true, lightweight)
+      gsap.fromTo('.service-card',
+        { y: 25, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.08,
+          duration: 0.6,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '#services',
+            start: 'top 85%',
+            once: true
+          },
+          clearProps: 'all'
+        }
+      );
+
+      // Testimonial Cards Fade Up (once: true)
+      gsap.fromTo('.testimonial-card',
+        { y: 25, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.08,
+          duration: 0.6,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: '#testimonials',
+            start: 'top 85%',
+            once: true
+          },
+          clearProps: 'all'
+        }
+      );
+
+      // 4. Smooth Animated Counter Numbers
+      const counters = document.querySelectorAll('.stat-counter');
+      let countersStarted = false;
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !countersStarted) {
+            countersStarted = true;
+            counters.forEach(counter => {
+              const target = +counter.getAttribute('data-target');
+              const duration = 1500;
+              const stepTime = Math.max(Math.floor(duration / (target || 1)), 20);
+              let current = 0;
+              const increment = Math.max(1, Math.ceil(target / (duration / stepTime)));
+              
+              const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                  counter.textContent = target;
+                  clearInterval(timer);
+                } else {
+                  counter.textContent = current;
+                }
+              }, stepTime);
+            });
+          }
+        });
+      }, { threshold: 0.3 });
+
+      const statsSection = document.querySelector('.stat-counter')?.closest('section');
+      if (statsSection) {
+        counterObserver.observe(statsSection);
+      }
+
+    });
+  </script>
+</body>
+</html>
