@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* TAILWIND v4 THEME — SALAHSHOUR VOICE Editorial Luxury                     */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+@theme {
+  --color-alabaster: #F8F9FA;
+  --color-alabaster-50: #FFFFFF;
+  --color-alabaster-100: #F9FAFB;
+  --color-alabaster-200: #F3F4F6;
+  --color-alabaster-300: #E5E7EB;
+
+  --color-gold-50: #FFFDF5;
+  --color-gold-100: #FDF7EB;
+  --color-gold-200: #F7E7C4;
+  --color-gold-400: #E5C07B;
+  --color-gold-500: #C59B27;
+  --color-gold-600: #B0881E;
+  --color-gold-700: #8E6B12;
+  --color-gold-800: #6B4F0A;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --shadow-editorial: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+  --shadow-editorial-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.10);
+  --shadow-gold-glow: 0 4px 20px -2px rgba(197, 155, 39, 0.35);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* BASE STYLES                                                                */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;
+  color: #0f172a;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: var(--color-gold-400);
+  color: #000;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* CUSTOM SCROLLBAR                                                           */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-500);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* GOLD CTA BUTTON                                                            */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--color-gold-500) 0%, var(--color-gold-600) 100%);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+}
+
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-gold:hover::before {
+  left: 100%;
+}
+
+.btn-gold:hover {
+  box-shadow: 0 6px 24px -2px rgba(197, 155, 39, 0.5);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* WAVE BAR ANIMATION (Voice Equalizer)                                       */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+@keyframes barAcoustic {
+  0%, 100% { transform: scaleY(0.25); }
+  50% { transform: scaleY(1); }
+}
+
+.wave-bar {
+  transform-origin: bottom;
+  animation: barAcoustic 1.2s ease-in-out infinite;
+}
+
+.wave-1 { animation-delay: 0.0s; }
+.wave-2 { animation-delay: 0.2s; }
+.wave-3 { animation-delay: 0.4s; }
+.wave-4 { animation-delay: 0.1s; }
+.wave-5 { animation-delay: 0.3s; }
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* SUBTLE BACKGROUND GRID                                                     */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.subtle-bg-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* MASK REVEAL FOR TEXT ANIMATION                                             */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.mask-line {
+  overflow: hidden;
+  display: block;
+}
+
+.mask-line > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* FLOATING ORBS                                                              */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  will-change: transform;
+  opacity: 0.4;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════ */
+/* MATERIAL SYMBOLS                                                           */
+/* ═══════════════════════════════════════════════════════════════════════════ */
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
