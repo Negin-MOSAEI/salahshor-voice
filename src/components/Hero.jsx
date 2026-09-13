@@ -189,7 +189,7 @@ export default function Hero() {
                 <div className="absolute bottom-4 inset-x-4 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-slate-300 shadow-sm flex items-center justify-between">
                   <div>
                     <h3 className="font-serif font-bold text-lg text-black">Abbas Salahshour</h3>
-                    <p className="text-[10px] uppercase tracking-widest text-gold-700 font-bold">Executive Coach • Master Vocalist</p>
+                    <p className="text-[10px] uppercase tracking-widest text-gold-700 font-bold">Executive Coach • Executive Communication Coach</p>
                   </div>
                   <div className="w-9 h-9 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 border border-gold-500/40">
                     <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>

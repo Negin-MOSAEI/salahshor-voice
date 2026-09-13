@@ -8,18 +8,12 @@ gsap.registerPlugin(ScrollTrigger)
 const testimonials = [
   {
     quote: 'Abbas helped me transition from being constantly interrupted in boardrooms to setting the tone of the entire conversation. The precision of his feedback is unmatched.',
-    name: 'Senior Partner',
-    org: 'International Arbitration Group (Geneva)',
   },
   {
     quote: 'The accent coaching was surgically precise. Within 8 weeks, investor questions shifted entirely from clarification to deal terms. It directly altered my funding trajectory.',
-    name: 'Managing Director & Founder',
-    org: 'Cross-Border Fintech (London & NYC)',
   },
   {
     quote: 'His methodology goes far beyond pronunciation—it instills psychological vocal sovereignty. My keynote delivery at global symposiums commands absolute stillness.',
-    name: 'Chair of Comparative Law',
-    org: 'European Legal Institute (Zurich)',
   },
 ]
 
@@ -73,18 +67,12 @@ export default function Testimonials() {
           {testimonials.map((t, idx) => (
             <div
               key={idx}
-              className="testimonial-card relative bg-slate-50 rounded-2xl p-8 border border-slate-300 hover:border-gold-500 transition-all duration-300 shadow-editorial flex flex-col justify-between will-change-transform"
+              className="testimonial-card relative bg-slate-50 rounded-2xl p-8 pb-10 border border-slate-300 hover:border-gold-500 transition-all duration-300 shadow-editorial flex flex-col justify-center will-change-transform"
             >
-              <div>
-                <div className="text-gold-600 font-serif text-4xl mb-3">&ldquo;</div>
-                <p className="text-black text-base italic leading-relaxed mb-6 font-medium">
-                  {t.quote}
-                </p>
-              </div>
-              <div className="border-t border-slate-300 pt-4">
-                <div className="text-sm font-extrabold text-black">{t.name}</div>
-                <div className="text-xs text-gold-700 uppercase tracking-wider font-bold">{t.org}</div>
-              </div>
+              <div className="text-gold-600 font-serif text-4xl mb-3">&ldquo;</div>
+              <p className="text-black text-base italic leading-relaxed font-medium">
+                {t.quote}
+              </p>
             </div>
           ))}
         </div>
