@@ -8,12 +8,15 @@ gsap.registerPlugin(ScrollTrigger)
 const testimonials = [
   {
     quote: 'Abbas helped me transition from being constantly interrupted in boardrooms to setting the tone of the entire conversation. The precision of his feedback is unmatched.',
+    org: 'JTI',
   },
   {
     quote: 'The accent coaching was surgically precise. Within 8 weeks, investor questions shifted entirely from clarification to deal terms. It directly altered my funding trajectory.',
+    org: 'Google Malaysia',
   },
   {
     quote: 'His methodology goes far beyond pronunciation—it instills psychological vocal sovereignty. My keynote delivery at global symposiums commands absolute stillness.',
+    org: 'La Trobe Law School',
   },
 ]
 
@@ -67,12 +70,17 @@ export default function Testimonials() {
           {testimonials.map((t, idx) => (
             <div
               key={idx}
-              className="testimonial-card relative bg-slate-50 rounded-2xl p-8 pb-10 border border-slate-300 hover:border-gold-500 transition-all duration-300 shadow-editorial flex flex-col justify-center will-change-transform"
+              className="testimonial-card relative bg-slate-50 rounded-2xl p-8 border border-slate-300 hover:border-gold-500 transition-all duration-300 shadow-editorial flex flex-col justify-between will-change-transform"
             >
-              <div className="text-gold-600 font-serif text-4xl mb-3">&ldquo;</div>
-              <p className="text-black text-base italic leading-relaxed font-medium">
-                {t.quote}
-              </p>
+              <div>
+                <div className="text-gold-600 font-serif text-4xl mb-3">&ldquo;</div>
+                <p className="text-black text-base italic leading-relaxed font-medium">
+                  {t.quote}
+                </p>
+              </div>
+              <div className="border-t border-slate-200 mt-6 pt-4">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-gold-700">{t.org}</span>
+              </div>
             </div>
           ))}
         </div>
